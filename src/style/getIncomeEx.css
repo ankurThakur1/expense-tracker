@@ -1,0 +1,75 @@
+.upper-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 30px; */
+    margin-top: 1.5rem;
+    /* border: 1px solid orange; */
+}
+.balance{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.balance h3{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.balance h3 span{
+    font-size: 1.6rem;
+}
+.btn{
+    padding: 0.5rem 1.6rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    background: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.btn:hover{
+    color: orange;
+    box-shadow: 0 3px 8px rgba(233, 75, 2, 0.6);
+    /* transform: translateY(-3px); */
+}
+.show-expenses{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.income,
+.expense{
+    flex-basis: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 1.2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.income span,
+.expense span{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.income .inc-amt{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #39A97C;
+}
+.expense .exp-amt{
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #D95858;
+}

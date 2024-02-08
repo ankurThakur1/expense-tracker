@@ -1,0 +1,15 @@
+.trackerApp{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.tracker{
+    flex-basis: 40%;
+    padding: 1rem;
+    border: 1px solid gray;
+}
+.tracker h1{
+    text-align: center;
+    margin: 1.5rem 0;
+}
