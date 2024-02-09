@@ -21,6 +21,12 @@
 .balance h3 span{
     font-size: 1.6rem;
 }
+.balance h3 span.neg{
+    color: #D95858;
+}
+.balance h3 span.pos{
+    color: #39A97C;
+}
 .btn{
     padding: 0.5rem 1.6rem;
     font-size: 1rem;
