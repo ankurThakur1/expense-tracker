@@ -8,12 +8,12 @@ const FormData = ({ setShowForm }) => {
     const [selectType, setSelectType] = useState("income");
     const { getTransactions } = useIncomeExpenseContext();
 
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
         if(!amount || !description || !selectType){
             alert("Please enter all fields");
-
         }
         else{
             getTransactions({
