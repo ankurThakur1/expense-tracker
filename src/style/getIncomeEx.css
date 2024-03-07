@@ -79,3 +79,8 @@
     font-weight: 600;
     color: #D95858;
 }
+.chart{
+    position: absolute;
+    top: 32%;
+    right: 12%;
+}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "../style/getIncomeEx.css";
 import FormData from './FormData';
 import { useIncomeExpenseContext } from '../context/IncomeExpenseContext';
+import Chart from './Chart';
 
 const GetIncomeExpense = () => {
     const [showForm, setShowForm] = useState(false);
@@ -10,6 +11,18 @@ const GetIncomeExpense = () => {
     console.log("income: ", income);
     console.log("expense: ", expense); 
     console.log(view);
+
+    const data = {
+      labels: ["Income", "Expense"],
+      datasets: [
+        {
+          label: "Amount in ₹",
+          data: [income, expense],
+          borderWidth: 0,
+          backgroundColor: ["#dfff29", "#D95858"]
+        }
+      ]
+    }
 
   return (
     <div className="upper-section">
@@ -30,6 +43,7 @@ const GetIncomeExpense = () => {
             <span className="exp-amt">₹{expense}</span>
         </div>
       </div>
+      <Chart data={data} />
     </div>
   )
 }
